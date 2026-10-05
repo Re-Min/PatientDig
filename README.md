@@ -1,6 +1,6 @@
-# PatientDig
+﻿# PatientDig
 
-[![PatientDig cover](assets/readme/cover.jpg)](assets/readme/cover.jpg)
+[![PatientDig cover](assets/readme/cover.webp)](assets/readme/cover.webp)
 
 [中文说明](#中文说明) · [English](#english)
 
@@ -36,7 +36,7 @@ PatientDig 封面
   </p>
 
   <p align="center">
-    <img src="assets/readme/excavation.jpg" alt="PatientDig 3D excavation scene" width="960">
+    <img src="assets/readme/excavation.webp" alt="PatientDig 3D excavation scene" width="960">
   </p>
 
 - **3D 中国调查地图**：地图以中国为调查范围，当前可玩地点是四川自贡和平街道石头冲；辽宁北票、广东河源等地点以区域情报和参考样本形式出现。
