@@ -1,0 +1,47 @@
+@font-face {
+  font-family:'Lilita One';
+  src:url('../../assets/fonts/LilitaOne-Regular.ttf') format('truetype');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+#game-cover { position:fixed; inset:0; z-index:30; overflow:hidden; background:#aa814c; }
+#game-cover[hidden] { display:none; }
+.cover-art { position:absolute; width:100%; height:100%; object-fit:cover; object-position:50% 45%; }
+#game-cover::after { content:''; position:absolute; inset:60% 0 0; background:linear-gradient(transparent,#30200be0); pointer-events:none; }
+.cover-logo {
+  position:absolute; z-index:1; right:3.2vw; top:3vh;
+  width:clamp(64px,5.2vw,96px); aspect-ratio:1; height:auto;
+  object-fit:cover; border-radius:50%; border:5px solid #ffe5a6;
+  box-shadow:0 4px 0 #704328,0 8px 18px #42280e66;
+  transform:rotate(-8deg); opacity:.94;
+}
+.cover-name {
+  position:absolute; z-index:2; left:4vw; top:4vh; margin:0;
+  font:400 clamp(48px,6vw,104px)/1.1 'Lilita One', 'Arial Rounded MT Bold', sans-serif;
+  letter-spacing:.005em; white-space:nowrap;
+  color:#ffe5a6; -webkit-text-stroke:4px #704328; paint-order:stroke fill;
+  text-shadow:0 2px 0 #c18b4a,0 4px 0 #995e32,0 7px 0 #704328,0 11px 16px #42280e55;
+  transform:rotate(-3deg); transform-origin:left center;
+}
+.cover-name-accent { color:#efa450; }
+#game-story { position:fixed; inset:0; z-index:30; display:grid; grid-template-rows:minmax(0,1fr) auto; background:#241e16; }
+#game-story[hidden], .story-image[hidden] { display:none; }
+.story-frame { min-height:0; overflow:hidden; }
+.story-image { display:block; width:100%; height:100%; object-fit:contain; }
+.story-navigation { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px max(24px,4vw) max(12px,env(safe-area-inset-bottom)); color:#ffe5a6; }
+#story-page { font:400 20px 'Lilita One',sans-serif; letter-spacing:.1em; }
+#story-status { font-size:13px; }
+#story-next { display:flex; align-items:center; gap:20px; padding:10px 20px; min-height:48px; border:2px solid #ffe3a3; border-radius:12px; color:#4b321f; background:linear-gradient(#f8dc9f,#dfad61); box-shadow:0 3px 0 #8e5c31; font:400 22px 'Lilita One',sans-serif; }
+#story-next svg { width:28px; height:28px; fill:none; stroke:currentColor; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+#story-next:hover { filter:brightness(1.08); }
+#story-next:active { transform:translateY(2px); }
+#story-next:disabled { cursor:wait; opacity:.55; }
+.cover-footer { position:absolute; z-index:1; left:4vw; right:4vw; bottom:max(6vh,24px); display:flex; align-items:flex-end; justify-content:space-between; gap:40px; }
+.cover-description { margin:0; text-align:left; color:#fff1d0; font:400 clamp(15px,1.2vw,20px)/1.65 'Segoe UI',sans-serif; text-shadow:0 2px 6px #231605; }
+#cover-start { flex-shrink:0; min-width:220px; padding:16px 28px; border:2px solid #ffe3a3; border-radius:14px; background:linear-gradient(#f8dc9f,#dfad61); color:#4b321f; font:400 28px/1.1 'Lilita One','Arial Rounded MT Bold',sans-serif; letter-spacing:.02em; white-space:nowrap; box-shadow:0 5px 0 #8e5c31,0 12px 28px #50341966; }
+#cover-start span { margin-left:20px; }
+#cover-start:hover { filter:brightness(1.08); }
+#cover-start:active { transform:translateY(3px); box-shadow:0 2px 0 #8e5c31; }
+@media(max-width:850px) { .cover-footer { flex-direction:column; align-items:flex-end; gap:20px; } .cover-description { align-self:flex-start; } }
+@media(max-width:600px) { .cover-art { object-position:51% center; } .cover-logo { right:18px; top:16px; width:58px; border-width:3px; } .cover-name { top:24px; left:24px; } .cover-footer { left:24px; right:24px; bottom:max(28px,env(safe-area-inset-bottom)); } .cover-description { font-size:14px; line-height:1.55; } #cover-start { font-size:25px; min-width:190px; padding:14px 24px; } }

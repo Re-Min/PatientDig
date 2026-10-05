@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+<title>PatientDig · Fossil Discovery</title>
+<style>
+:root{--cream:#fff5da;--ink:#364638;--sage:#9ea97e;--gold:#e7be71}*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:#a6ac8e;font-family:'Microsoft YaHei',system-ui,sans-serif;color:var(--cream)}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}#map3d{position:fixed;inset:0}canvas{display:block;touch-action:none}.overlay{position:fixed;inset:0;pointer-events:none;background:linear-gradient(180deg,#1e322d40,transparent 21%,transparent 73%,#192f2b55)}.overlay button,.overlay a{pointer-events:auto}.masthead{position:absolute;left:38px;top:30px}.kicker{font-size:10px;letter-spacing:.25em;font-weight:600;opacity:.76}.masthead h1{font-family:serif;font-size:34px;letter-spacing:.2em;font-weight:500;margin:7px 0}.masthead p{font-size:11px;letter-spacing:.16em;margin:0;opacity:.82}.top-actions{position:absolute;right:34px;top:35px;display:flex;gap:10px}.quiet{border:1px solid #fff5da60;color:var(--cream);background:#30473575;padding:10px 15px;border-radius:30px;backdrop-filter:blur(9px);font-size:12px}.chapter{position:absolute;left:38px;top:150px;max-width:195px;text-shadow:0 2px 12px #33402c}.chapter h2{font:500 20px serif;letter-spacing:.12em;margin:10px 0}.chapter p{font-size:12px;line-height:1.9;color:#fff5dac4}.controls{position:absolute;left:38px;bottom:34px;font-size:11px;line-height:1.9;opacity:.84}.controls span{display:block;font:9px monospace;letter-spacing:.1em;opacity:.7}.pins{position:fixed;inset:0;pointer-events:none;overflow:hidden}.pin{position:absolute;display:none;transform:translate(-50%,-100%);white-space:nowrap;pointer-events:auto;color:#fff8dd;border:1px solid #ffffe52a;background:#344734e8;padding:8px 12px;border-radius:4px 12px 12px 12px;font-size:11px;box-shadow:0 5px 15px #28302330}.pin i{display:inline-block;width:6px;height:6px;background:#c0cc9e;border-radius:50%;margin-right:7px}.pin.selected{background:#835d35;outline:2px solid #e7be7190}.pin.selected i{background:#ffd88c}.letter{position:absolute;right:34px;bottom:100px;width:290px;background:#f5edd8;color:var(--ink);padding:23px 24px 20px;border-radius:3px 12px 5px 12px;box-shadow:0 14px 45px #23302340;transform:rotate(-1deg);pointer-events:auto}.letter:before{content:'';position:absolute;top:-10px;left:110px;width:64px;height:21px;background:#ded0aeb8;transform:rotate(5deg)}.letter .number{font:10px monospace;letter-spacing:.12em;color:#938269}.letter h3{font:600 22px serif;margin:14px 0 9px}.letter p{font-size:12px;line-height:1.85;color:#6c725f;margin:10px 0}.letter .location{font-size:11px;color:#a17447;border-bottom:1px dashed #bcaf905f;padding-bottom:11px}.letter .note{font-size:10px;margin-top:11px;color:#8d8978}.primary{display:block;width:100%;border:0;border-radius:8px;background:#4e6747;color:#fff7de;padding:12px;font-weight:600;font-size:12px;box-shadow:0 3px #344a33}.primary:disabled{cursor:default;background:#b7b39f;box-shadow:none}.dock{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);display:flex;gap:5px;border:1px solid #c0be9266;background:#314535da;border-radius:40px;padding:6px;box-shadow:0 9px 25px #26372525;backdrop-filter:blur(12px);white-space:nowrap}.dock button{background:none;border:0;color:#e5e8cf;padding:12px 20px;border-radius:30px;font-size:12px}.dock button.active{background:#e6dfc3;color:#3e523b}.dock small{font:10px monospace;padding-left:6px;opacity:.7}.toast{position:fixed;top:30px;left:50%;transform:translate(-50%,-20px);max-width:420px;opacity:0;pointer-events:none;background:#2e463ceb;color:#fff1ce;padding:13px 18px;border-radius:10px;font-size:12px;line-height:1.7;transition:.2s;z-index:9}.toast.show{opacity:1;transform:translate(-50%,0)}.loading{position:fixed;inset:0;display:grid;place-content:center;background:#d5d8c1;color:#44543e;z-index:20;text-align:center;transition:opacity .45s}.loading h2{font:26px serif;letter-spacing:.2em}.loading p{font-size:12px}.loading progress{width:220px;accent-color:#687b51}.loading.hide{opacity:0;pointer-events:none}.loading button{margin-top:16px;padding:10px;border:1px solid #7b8a62;border-radius:8px;background:none;color:#44543e}.catalog-info{display:none;position:absolute;left:38px;top:150px;width:240px;text-shadow:0 2px 8px #243c35}.catalog-info h2{font:28px serif;margin:15px 0 6px}.catalog-info em{font:italic 11px serif;letter-spacing:.02em;opacity:.8}.catalog-info p{font-size:12px;line-height:2;color:#f2efd8}.catalog-info .status{display:inline-block;border:1px solid #e3ddb377;border-radius:25px;padding:6px 10px;font-size:10px;margin-top:15px}.catalog-tabs{display:none;position:absolute;right:34px;bottom:125px;gap:8px;flex-direction:column}.catalog-tabs button{border:1px solid #fff3c74d;background:#3a4c37df;color:#f4edcb;border-radius:10px;padding:12px 20px;text-align:left;font-size:12px}.catalog-tabs button.active{background:#d8d3b6;color:#42513a}.tooltip{position:fixed;display:none;pointer-events:none;color:#fff7d9;background:#3b4d37df;padding:8px 12px;border-radius:8px;font-size:11px;z-index:6}.atlas-note{position:absolute;right:38px;top:90px;text-align:right;font-size:10px;opacity:.7;line-height:1.8}.sample-help{position:absolute;bottom:105px;left:38px;color:#fff3ca;font-size:11px;opacity:.85}.hidden{display:none!important}
+@media(max-width:850px){.masthead{left:20px;top:20px}.masthead h1{font-size:26px}.chapter{left:20px;top:115px;max-width:170px}.chapter p{display:none}.top-actions{right:18px;top:22px}.top-actions .label{display:none}.letter{right:18px;bottom:92px;width:240px;padding:17px}.letter h3{font-size:19px}.letter p{font-size:11px}.controls{left:20px;bottom:20px;font-size:9px}.dock{bottom:20px}.dock button{padding:10px 14px}.atlas-note{right:18px}.catalog-info{left:20px;top:125px;width:200px}.catalog-tabs{right:18px;bottom:105px}.sample-help{left:20px;bottom:95px;max-width:135px;line-height:1.7}}
+@media(max-width:540px){.chapter{top:100px}.chapter h2{font-size:16px}.letter{bottom:92px;right:12px;width:210px;padding:14px}.letter h3{margin:10px 0 6px}.letter p{line-height:1.65}.letter .note{display:none}.controls{display:none}.dock{width:max-content}.atlas-note{top:81px;font-size:8px;max-width:100px}.sample-help{bottom:97px;left:14px;width:95px;font-size:10px}.catalog-info{top:111px;width:185px}.catalog-info h2{font-size:22px}.catalog-tabs button{padding:10px 12px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<link rel="stylesheet" href="src/home/cover.css">
+<link rel="stylesheet" href="src/home/map-ui.css">
+<link rel="preload" as="image" href="assets/cover.webp">
+</head>
+<body>
+<section id="game-cover" aria-label="PatientDig · 游戏封面">
+  <img class="cover-art" src="assets/cover.webp" width="2048" height="1152" fetchpriority="high" alt="粘土风格的考察员在发掘营地举起化石，身旁有恐龙、工具和骨架">
+  <img class="cover-logo" src="assets/logo.jpg" width="250" height="250" alt="" aria-hidden="true">
+  <h1 class="cover-name">Patient<span class="cover-name-accent">Dig</span></h1>
+  <div class="cover-footer" lang="en">
+    <p class="cover-description">You're an archaeology student. Your team has received a fossil tip.<br>Your professor sends you to the site. Your first dig starts here.</p>
+    <button id="cover-start" type="button">Start Game <span aria-hidden="true">→</span></button>
+  </div>
+</section>
+<section id="game-story" aria-label="Opening story" hidden>
+  <div class="story-frame">
+    <img class="story-image" src="assets/story/intro-1.webp" alt="1. An archaeology student arrives at a small village with their mentor.">
+    <img class="story-image" src="assets/story/intro-2.webp" alt="2. The student and mentor discover fossils in the countryside." hidden>
+    <img class="story-image" src="assets/story/intro-3.webp" alt="3. The student learns to observe, build experience, form hypotheses and make judgments." hidden>
+    <img class="story-image" src="assets/story/intro-4.webp" alt="4. Every fossil is a new story. The next stop may be your discovery." hidden>
+  </div>
+  <div class="story-navigation">
+    <span id="story-page" aria-live="polite">01 / 04</span>
+    <span id="story-status" role="status"></span>
+    <button id="story-next" type="button" aria-label="Next page" title="Next page"><span id="story-next-label">Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></button>
+  </div>
+</section>
+<div id="map3d" aria-label="可旋转的三维中国化石情报地图"></div>
+<div class="pins" id="pins"><button class="pin selected" data-pin="sichuan"><i></i>四川 · 自贡</button><button class="pin" data-pin="liaoning"><i></i>辽宁 · 北票</button><button class="pin" data-pin="heyuan"><i></i>广东 · 河源</button></div>
+<div class="overlay" id="game-ui">
+<header class="masthead"><h1>Patient<span>Dig</span></h1><p>FIELD JOURNAL <span aria-hidden="true">/</span> 野外调查手记</p></header>
+<div class="top-actions"><button class="quiet" id="reset-view" aria-label="复位镜头">↺ <span class="label">复位镜头</span></button><button class="quiet" id="sound" aria-pressed="false">声音：关</button><button class="language-control" id="language-toggle" type="button" title="切换语言 · English" aria-label="切换语言 · English"><span aria-hidden="true">文</span><span class="language-label">English</span></button></div>
+<div class="atlas-note">中国化石调查 · 示意地图</div>
+<section class="chapter" id="chapter"><div class="kicker"><span class="chapter-number">01</span> EXPEDITION / 寻找线索</div><h2>下一站，去哪里？</h2><p>点选地图上的地点，<br>开启一段化石发现的故事。</p></section>
+<article class="letter" id="letter" aria-live="polite"><div class="letter-heading"><span>野外情报</span><span class="letter-stamp">FIELD NOTES</span></div><div class="number" id="report-id">来信 001 · 村民报告</div><h3 id="report-title">石头冲的“龙骨”</h3><div class="location" id="report-location">四川 · 自贡 · 和平街道</div><p id="report-body">村民修建房屋时，发现几块像脊椎的石头。先去看看露头，再决定从哪里开始清理。</p><button class="primary" id="depart">出发调查 →</button><div class="note" id="report-note">改编自 1985 年真实发现 · 当前可玩地点</div></article>
+<section class="catalog-info" id="catalog-info" aria-live="polite"><div class="kicker">FIELD COLLECTION / 研究桌</div><h2 id="specimen-title"></h2><em id="specimen-latin"></em><div class="status" id="specimen-status"></div><p id="specimen-text"></p></section>
+<div class="catalog-tabs" id="catalog-tabs"><button data-specimen="heping">01　和平永川龙</button><button data-specimen="feather">02　羽毛化石示意</button><button data-specimen="rock">03　红层岩石样本</button></div>
+<div class="sample-help" id="sample-help">小提示 · 点击收音机听情报，点击标本看图鉴。</div>
+<div class="controls"><span class="control-key">拖动</span> 环视 <span class="control-key">滚轮</span> 缩放</div>
+<nav class="dock" aria-label="游戏导航"><button id="nav-map" class="active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2Zm6-2v16m6-14v16"/></svg><span class="nav-text">调查地图</span></button><button id="nav-catalog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C9 3 5 3 3 4v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-2-1-6-1-9 1Zm0 0v15"/></svg><span class="nav-text">野外图鉴</span> <small id="catalog-count">00</small></button><button id="nav-field"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 3 7 7m-4-4-7 7m-3-3 7 7-3 3c-4 3-8 0-7-4Z"/></svg><span class="nav-text">前往发掘</span></button></nav>
+</div>
+<div class="loading" id="loading"><h2>铺开调查地图</h2><progress id="load-bar" max="7" value="0"></progress><p id="load-text">正在布置粘土模型…</p><button id="retry" hidden>重新载入</button></div>
+<div class="toast" id="toast" role="status"></div><div class="tooltip" id="tooltip"></div>
+<script src="src/home/music.js"></script>
+<script src="src/home/cover.js"></script>
+<script src="dist/home.js"></script>
+</body></html>

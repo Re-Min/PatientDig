@@ -1,0 +1,164 @@
+{
+  "trowel": {
+    "prompt": "An archaeologist's pointing trowel: a flat diamond-shaped steel blade with a worn edge, a short bent metal neck and a rounded varnished wooden handle. Field excavation tool. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 8000,
+    "task_id": "88e1d632-8487-488e-a150-b85d05cb4d04",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/88e1d632-8487-488e-a150-b85d05cb4d04/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvODhlMWQ2MzItODQ4Ny00ODhlLWExNTAtYjg1ZDA1Y2I0ZDA0L2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzcxMjZ9fX1dfQ__&Signature=viu~dDnG8SVRFVth49mV61MlfW1APNGQORy1VrtP7DXbu5mnQ64SxxhLvgZtpIxdk9gnL2cMAARCQg5guzeW6ldSPQwyElL3vrmk0g~fbBAm0H0JNhvBISHFVFVQ6rVi4Bfuej5gr82s-4BIjwG3pSVNe-4zXwVlqOsPsWkrE6uSaE45uunh-98benWxbi~yUBS3lYDSY0zBF9t3wsceJW1ENBSQOdtF9XICLgb13lVC05chOqJv-8zNGiPIeBFU6ZH2q~I8uc9ZksvRd5B524xrC2KmylzXKFrvdwf-npJpLP56CJz3HNko-ujeNdBkau4gtT-nARg7~VzvL3IR5Q__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "brush": {
+    "prompt": "A small soft-bristle excavation brush used to clean fossils: a flat wooden handle with a rounded end and a short dense tuft of light brown natural bristles held by a metal ferrule. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 8000,
+    "task_id": "e5b5b11a-9ead-4bba-9e6b-5cd40a00b78d",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/e5b5b11a-9ead-4bba-9e6b-5cd40a00b78d/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvZTViNWIxMWEtOWVhZC00YmJhLTllNmItNWNkNDBhMDBiNzhkL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzcyMzJ9fX1dfQ__&Signature=cRibsyHrHJqeZJLgWMakU55w0LU2mP9Yyh0SOVE3NqJg~BiOnKky0RI6GwEazFVvFEfgFICi1iIRwihlQnD8yOCEcSzHaSv1amDGB0rJFqJb5zmWT7pkjyIY7PQTKCz4-8oKdAg-wjEYvF1cvSv-hXEsO~LSnDPyZgSKbr1ddtmzduvvYsFHQd~xC5JlDYBDElYP9kNqF-x0MBCkQtYunuJwUyvXGSgNXXXZ4JnAbwt8Oehg~J4WGDl0jWxuWHryOls5hZ7oQaqamfHju87Qa545IpWAjeig45VQHSjTg-Mmd1cdL4yULyCQta22z1FMwDbNTIuHZ4Vx4rjYr54vug__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "bamboo_pick": {
+    "prompt": "A thin bamboo pick tool for removing rock around fossils: a slender pale bamboo stick about 20 cm long with a sharpened flat chisel tip and a visible bamboo node near the grip. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 4000,
+    "task_id": "114dc467-7437-41d8-8c39-778755062d75",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/114dc467-7437-41d8-8c39-778755062d75/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvMTE0ZGM0NjctNzQzNy00MWQ4LThjMzktNzc4NzU1MDYyZDc1L2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzcyMjZ9fX1dfQ__&Signature=nnFX-quMmvNmeob7KnAwvgcUzZCFgIMoX2TrY0h~F8dQAT2r43EXfOc2NUE9N3T~yxi0Ar4m6HiWmnazqwFa6b0LzXWJq~MLJsY~F-W7vzeyeCAmVw7LQ~5jsdVeYlc3I3mSEPQuB1ZF0hvyazpl~-roRysAQ4HgPdYUlfnoIsIE3vPbcb-33qXcJQdHWc3RSFpFdz4GWoVwYOUSwbWUX5eG4c5qipQBgGPkcn04R-L~GAcXMHKqKWl59vGTx-TrWqecTf3IBKJCCezQZOKe4xSoT2ueGGy5OWPFiZEg3t~UI9Jf67qFearb1aHHBepon7PM4FHo66IaVam2zm30tw__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "archaeologist": {
+    "prompt": "A friendly Chinese field paleontologist standing in a relaxed T-pose, full body, arms straight out to the sides: wide-brim canvas sun hat, khaki field vest with pockets over a light shirt, rolled sleeves, cargo trousers, sturdy brown boots, small canvas satchel. Chibi clay figure proportions, simple friendly face. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 20000,
+    "task_id": "1fc51787-89fd-435b-980d-fd9355e65eb1",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/1fc51787-89fd-435b-980d-fd9355e65eb1/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvMWZjNTE3ODctODlmZC00MzViLTk4MGQtZmQ5MzU1ZTY1ZWIxL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzcyNTJ9fX1dfQ__&Signature=kg1rBgM6U7F-~B9q3QX21tybllnrjD3b~R0YzBsCWX2D4n-KS4G0kgQd4GTgT2IY949IyiuK9QRJ1FAAfozW~Jb47Tcngzj98NJDHgaCeJeUddnthd9OK838Kfkg3l~V6lEgt9q3BP8H6ciuHrLWm2jJoyHsttnBcn-4dyowXteMSz-8IhVbLYT0NmmIxDUq5IJLvhZTnOYO33VcyXjJ2PY8~PU6Kh2mqmNWKEZBN~SAeumQ0jakbXedJol6DVK4UWHZTSeTU99S9xoFcFwsIl9DXaPsBNC8xM7uTtgTLPJ1jUyPmFQEu7iKrRSnN20SSLkO2foogleHaDmh9TEKPQ__&Key-Pair-Id=K1676C64NMVM2J",
+    "rig_task_id": "c1954d0b-5470-4ddc-a893-e7a51d0b7e49",
+    "rig_credits": 25.0,
+    "anim_task_id": "85fef3fc-0b54-4165-b239-f92b9d4adfe5",
+    "anim_credits": 40.0,
+    "animations": [
+      "preset:biped:idle",
+      "preset:biped:dig",
+      "preset:biped:shovel",
+      "preset:biped:cheer"
+    ]
+  },
+  "tail_vertebrae": {
+    "prompt": "A short articulated series of four fossilized dinosaur tail vertebrae lying in a gentle curve, each with a spool-shaped centrum and a short upward neural spine, pale ochre mineralized bone with fine cracks and reddish sandstone stains. Paleontology specimen. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 15000,
+    "task_id": "9f206449-1540-400e-b222-0fb75667561f",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/9f206449-1540-400e-b222-0fb75667561f/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvOWYyMDY0NDktMTU0MC00MDBlLWIyMjItMGZiNzU2Njc1NjFmL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzcyMzV9fX1dfQ__&Signature=i5JyowW~jSdU3epqiUnta7-hGLTIRozdqjBWP94txf18KqoKiTUMZuw8WbP5~bCHqpxgptOZRsKAnp9z2YRPmziVxDWBHkY~5nQj7yDlPb8rC7UfyBNfmExqIXVAxtq7YJh8XGpTeBqP38zmFW4wN3eyYRAbaLtw-e4q8wAruIezzX9~EKzWx3Qg42JVxgZcOrv9o6xTFor31ksgpGXsCDNISqV7yuhXx7rpBDnMOLn9tjtCSOKeD8d~8t3jA520pdHq8yMLPOaGDZmT4-t3OE8TBGnfMvyxnzuSUtO8Y21gpSBV5M~cY~5LiBSa~~qTBHbWTIRPrsoBRI5Kr3N34Q__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "vertebra": {
+    "prompt": "A single large fossilized theropod dinosaur dorsal vertebra: thick hourglass centrum, tall neural spine and two side transverse processes, pale ochre mineralized bone with cracks and reddish sandstone stains. Paleontology specimen. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 12000,
+    "task_id": "18b617e8-7065-4722-acfb-546237feac38",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/18b617e8-7065-4722-acfb-546237feac38/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvMThiNjE3ZTgtNzA2NS00NzIyLWFjZmItNTQ2MjM3ZmVhYzM4L2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzcyNjV9fX1dfQ__&Signature=v4pr4nXTB5ohv4TQSlTlBwBePu5P7QRXmRWzvLN7dSuWGqyRtxdiUevcMxZLG1mpWH6AOsjSFxC7tPjbRg3MYKmBzNWE1P9JIXkOZkac4Pl6dksK290ULIHPBr1p~WHhHlXKkY2qy9nl4EfAky32YnAK8KBaymDTEXxl5YqHfd7l~~lWAQfcb9C5gQhf7OnB171TcuJ11Hd2to1h6FvAOGRzO7TzLn~-Vr9oWcavn6AIph7MUFnQvKGVWNqxeEaANDvCMHAO-fUtRcKO5lFbBU94uI4kiDbGxUbwS-2HU4-cdWZJTR54G3hGbYEjL8MmE8AXYO09zYqLVrLWbjQOsw__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "rib": {
+    "prompt": "A long curved fossilized dinosaur rib fragment, gently arched flattened bone broken at one end, rib head with two small knobs at the other end, pale ochre mineralized bone with cracks and reddish sandstone stains. Paleontology specimen. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 8000,
+    "task_id": "ad3afd52-43c8-4dd0-987c-edae272bc7d0",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/ad3afd52-43c8-4dd0-987c-edae272bc7d0/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvYWQzYWZkNTItNDNjOC00ZGQwLTk4N2MtZWRhZTI3MmJjN2QwL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzcyMzl9fX1dfQ__&Signature=pAM~9CTe1lHzEAdOzt3dLRr3hAp2pNtXod7kOJ4H1VJMSuip28ZMivWdQgrAwp9oiQTVXFEugotOMj1FAN~lyUABSuwseUftz0ekkEp9cLBwwlDBz-wDDvpNAd0wmHugPHkgNKIImemfzqZnBvs-CkQV8GUBjoru5wZxZJNLUGZFiobdICG~wioK78Cw6aK2eLQKVIMh-hptCuTtUiEseaQd6JNozn09-8~QlhpMFNZtbx0-Bvq4sojOElVgGJNt3-ZFuL9ztQlfAThh-1yj0XuwjbXz6PCscNT9ZgrsD-OanvLeL~W~AWZ0Hn5FMP4~L-dMCtAU~EJBe4Nj~2GbWA__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "bone_fragment": {
+    "prompt": "An irregular broken chunk of fossilized dinosaur limb bone, jagged fractured edges showing spongy inner bone texture, pale ochre and brown mineralized bone with reddish sandstone stains. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 6000,
+    "task_id": "ccb79b2d-c8aa-4b7b-ba9c-936e3cf8f6e5",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/ccb79b2d-c8aa-4b7b-ba9c-936e3cf8f6e5/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvY2NiNzliMmQtYzhhYS00YjdiLWJhOWMtOTM2ZTNjZjhmNmU1L2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzczNjJ9fX1dfQ__&Signature=DlKxo9qFXDaXYvtwYFYEjGXrw6Gj906fF6HYnXfTLDYgDfPMMYQohgL3zbyR8Tzx0b0qOYPCr14ILExAz60WIOhKyhANVJMQb9X7vVH76vIpkDmFQHkLAvGvgS3e-QB2c7u8koAI~IV2k6FQF3dlFV0F4a7cnlTynMllrSRyKQ7bHPw1CnEQwWRFHa0~t0M2EAVMN9P2F7Cr~yCaTEzi0YN5PCcRcK2QdSASURZ4LYf2VGSHVImjC5bw7LXEs2tREugQaMRbg5CR2o0CsiynZCz4K6z4Bx7x8CdK9bF8Yk4kI8pkgrr-E1xepiIbAeTuxfDmiU7rW6DWp5Mhb9BB~w__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "yangchuanosaurus": {
+    "prompt": "A Yangchuanosaurus, a large Late Jurassic carnivorous theropod dinosaur from Sichuan China, standing on two strong hind legs, long stiff horizontal tail, large head with small nasal and eye ridges, short three-fingered arms, muted olive and rust brown skin with faint stripes. Museum reconstruction. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 30000,
+    "task_id": "f4929675-39b8-4c5a-9c8c-b80159233bd3",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/f4929675-39b8-4c5a-9c8c-b80159233bd3/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvZjQ5Mjk2NzUtMzliOC00YzVhLTljOGMtYjgwMTU5MjMzYmQzL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzczMTh9fX1dfQ__&Signature=PoEdF6-14PHPkVnEtHxtaTcjniqI-zufZtNxXuVg418qii8khQEh1cIAFIGQxDRAut9UNLzLlrXgS3qPs5kUT2Dfq~G~YI87pbJwm4P3GxeyXjr7uSZnEaC2-Lo4djYzfcisS4MwoiGXVzv3EPSRgT4vMWswN~j4Wxw9sG7pTMj3PK2XwpWLBDLzA9JkseFdnzv44Yl8ZzZ1a31MT9oFF~U23exXRWCNCsntwbuBAwf1G9mvuSA2v5Cy4DgOkocraz8x-ZEsp0U5irbKlJWBzStCFT239s1MsgJtcaWIVWR~Sk9JINumyg1pQyj8YvZjiJZapa8TkULG6qIM7979nA__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "canopy": {
+    "prompt": "A small temporary excavation rain shelter: four slender wooden poles with rope ties holding a slightly sagging faded blue-green canvas tarp roof, open on all sides. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 8000,
+    "task_id": "9683becf-74a2-400f-ba29-0e44f0199b6c",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/9683becf-74a2-400f-ba29-0e44f0199b6c/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvOTY4M2JlY2YtNzRhMi00MDBmLWJhMjktMGU0NGYwMTk5YjZjL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzczNTV9fX1dfQ__&Signature=PWzWfcin-wlFp0qxsC85YMKY7AhXYev0ul0GRMYzH1nWtC5YIohgePVevX4VcR5C031itMGDFnIWNr29aD9L~DB-QWtXqwmxjQdFurLQwkmVYSExe669h-JUEZv-Es01Hf9nhGM~hwgsq~6xp6kNnkcBZbPzVrMRmhwA28KiJRya97PFbQ6nWkFLUDdDVDlzx5xqqfqwDAq4zuAjZSaxcAvTQmoZSE~LF8YV5Wr-Wpb0WJTgWh~LuGh~mg53RduMPHkgJw22E48YE~InWkjnk1TNKEVJWX3TjQ9LZAtMFMfc7RLjfv7xLpz5DpIOBHVmAnHfRPCDpb3XXC74cMUybg__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "toolbox": {
+    "prompt": "An old wooden field toolbox with a carry handle, open top, holding a few rolled maps, a tape measure, a notebook and small labeled specimen bags. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 12000,
+    "task_id": "dd33c11b-0a6c-4c96-91fe-f055983f0fce",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/dd33c11b-0a6c-4c96-91fe-f055983f0fce/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvZGQzM2MxMWItMGE2Yy00Yzk2LTkxZmUtZjA1NTk4M2YwZmNlL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzczODh9fX1dfQ__&Signature=IAwYBndBiORtY-eB3AsoBPiHwkNB79HX7u8TlqVD4ff~S9R4W5Ng5bapMtzyzlKYi5tAp6Ex9OEyVwBzjbcZCAGpk-uybwrf6UbTWzEItEkfdAt0WpSGUJzqT8a4bqJrGxdh~3b9Q932RfQclk4gLeOUqLVXMzUOxCRYata5HevTGJYWyEC0Iw-p1g-qvVhFEWIo5PixKjReFb86p4ywNkwT6QHu8j4r21hoMd~qhfMjdBiwJWf1gw-QSXUXZmDVJ3zAmsz-1TsvzFp0OiUt9L~-BPqW~h8sKGGCeuoKn2BCzb-ZheToME9I7vrSgUw8sWlqRLODz~7i5vsvs~dauQ__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "site_sign": {
+    "prompt": "A small wooden excavation site sign: a weathered plank board on a single wooden stake, blank face with no writing, nail heads, slightly tilted. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 3000,
+    "task_id": "731dcfba-4cad-4dde-af0d-c819478925e1",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/731dcfba-4cad-4dde-af0d-c819478925e1/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvNzMxZGNmYmEtNGNhZC00ZGRlLWFmMGQtYzgxOTQ3ODkyNWUxL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzczNjh9fX1dfQ__&Signature=RcYc4Nn1sCQE-KVQV72S8hi3rNrPUOd81WkbfQWfqhXy46sery40j~p5K8eOFzylrcOTGuXGb4mDoNgHCJlDxM2RvYUPhV4Awt7FsuATkDh0fh59ZPyoOtQwCP7JwyjXvnaqIWskkA2Ix-W4DXPfe9d~xwpKdPREWaHRqEzMKuYTsgNtiEWhzJp3Lz2AiQma~qu15me5jagZo~hd7Db0RIIpkSqwaJ8jtsCcQCAyma~6a1kI-PlMv9ix0rujglt-QAhOyxPb-8k0UVfbD4Qz9OlDHpcHGWZY0gTgelF7NAQouvmITy9othgO8Xvs5vcNm-VbZAXFgzRrbyYgoCB9ow__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "grid_stake": {
+    "prompt": "A single short wooden survey stake for an excavation grid, square pointed post with an orange string tied around the top and a small blank paper tag. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 2000,
+    "task_id": "b35233ab-ff84-4298-aae0-9b75f24e082c",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/b35233ab-ff84-4298-aae0-9b75f24e082c/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvYjM1MjMzYWItZmY4NC00Mjk4LWFhZTAtOWI3NWYyNGUwODJjL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTExNzczNDd9fX1dfQ__&Signature=G0bN-q6YGXBgSMb38XtaZ5VJ4pUrI5v50uE6bdSaOGhFKQPR1FFzf7idFGhBQMdnR3Zy0ZNnLGt0RMd8mNVyReUseirfSGFWy65mumUDhcHW3HPyOQoQy4aWb6I6HRerx9cqkXElElXkbKGciNvkCNPKQP~d46XsknwXPodl6MdsL58-KW9dQnOOExrrB98K1EjsiE-xjF4ofmBU~ThykbLGQn9x350HUFpcgxBMuyT6zV4yqRuITFJivPDF0-blbxFvNtavv~0n2jiNtrOpVU4ol0aGIyZCSG1H~YPbvIizDXOJDAAIZco9o2L4hVa1C26HGJIjNMl2fKorSvf9-w__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "map_pin": {
+    "prompt": "A chunky location map pin marker: a classic teardrop pin with a round head and a pointed tip, plain off-white cream clay with a small flat round inset on the head. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 3000,
+    "task_id": "97d98965-29c8-4bb7-86e1-2840104cf99e",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/97d98965-29c8-4bb7-86e1-2840104cf99e/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvOTdkOTg5NjUtMjljOC00YmI3LTg2ZTEtMjg0MDEwNGNmOTllL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTEyMDc3MjV9fX1dfQ__&Signature=MXdRBsXOVrCY86YBjdw4xs~GTT0RH9B~TsCrN7FK2b7aERviS7ieKUXaKS1IwptHbpN8HF7dqSr7FWQNvH6jqnzxokQGs7YSsCfQPkVol5R4BYZQAmK1npO6KwAKOBnmrhJGH7LXpM3UgZsxFMZXtTU-lPjJY3hQ4qKhJ8adlX0YQWQzborp1sJ0XXdUcwPENeRTwWYKNduQrqL8HH3Zbkiyn4x2YE-7G1SqfPJ4SGqKfico~jpokjRGSpcy~y2a8DmhmOTCQQmLWDXJ5Gg9QBufNzk4c-hnFk1NBde3JMCodZG0ewZPhFV8HkOgVbY4lKvL7i9MnT77w77i4Lm9tQ__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "map_hills": {
+    "prompt": "A tiny miniature landscape piece: a cluster of three low rounded sage green hills with soft terraced slopes, a few small round trees and a thin dirt path. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 8000,
+    "task_id": "b3a832d8-638b-41e7-9610-1b271cd3f2a2",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/b3a832d8-638b-41e7-9610-1b271cd3f2a2/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvYjNhODMyZDgtNjM4Yi00MWU3LTk2MTAtMWIyNzFjZDNmMmEyL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTEyMDc3MzB9fX1dfQ__&Signature=ttp~1VT1SLOKCDXJhzV-etVxnVBTifhOjzSfzA4D9iZm66a-ElPMvpY9kCq1V7JAVb8OriTaWgMnrEcKg3M0DLGyE8wFLDF2ZUT1JzvvLFNX~V4ViJ-msioBAeX5F6dQJmG4k48yzM~AmrHX36CFcEdi~hXtJ40ULjJVWZQ1CFnn1kb3N2hq~lsWi18aG2d40gdBwVyhCc416Ak803tELIymxi8DhVCH5DVd3ASGqqdbP21UvEkVZkfrhAsBYQi0ff9X~Tj7GOvtKhIvtnltN9D9uhxg-IxI2~zBfBXVlJbw0PKFSa4fVt~SsArFmoK-lwyScQBcnnGJoTvahAbI4A__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "compass": {
+    "prompt": "A vintage field compass: a round brass case with a cream dial, a simple red and white needle and four short cardinal tick marks, lying flat. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 5000,
+    "task_id": "0369d858-2375-4ec3-8924-848f13731dfd",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/0369d858-2375-4ec3-8924-848f13731dfd/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvMDM2OWQ4NTgtMjM3NS00ZWMzLTg5MjQtODQ4ZjEzNzMxZGZkL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTEyMDc3Mjl9fX1dfQ__&Signature=JK6vb7LjdEpB1Fii9nix~YPcUxcW4um7mO2pocxrevrZKkSo-NMoAgHPjHPBEgNn7zFPAWI8NYr7P6l7S6LGZSzjSx3lIgHgjQ4o3Awu21WEeYURn5eT3xG2nMcNjmrRU8v5bCel2JbgOz61EsB5Cdc8sj40hJI5-Ud8wae5hSMhky8Eh3e5DnWF48mcNKWHvt0tDx7ETRnKIK8QO7ulWTj9dM0fHZzLKKvN3-4SUvXzcbgtYY7li53xcEmZ57w9MZvXHOfnr37aYWLTx75vGA3F6ccehYAe0T2RYxwZwB6JgTgLTmEx8Hjy-~dL~fUAXupl8IJo52ucnVDmBji7EA__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "field_radio": {
+    "prompt": "A small vintage portable transistor radio: a rounded box in faded olive green with a cream perforated speaker grille, one round tuning knob and a short telescopic antenna. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 6000,
+    "task_id": "007868ee-d984-4c61-acb3-35efc0109c1c",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/007868ee-d984-4c61-acb3-35efc0109c1c/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvMDA3ODY4ZWUtZDk4NC00YzYxLWFjYjMtMzVlZmMwMTA5YzFjL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTEyMDc3NTV9fX1dfQ__&Signature=vxyptD285ufsLJWpeUMBlL6iLOkx36CjtP6~3iQiRNTIf-Anl-Wl~1FgErtwYk5AFtrPgBpyjc-PoaSHYcxd09WvRWVeZnMqENBcfEGlxeroyfjIcfgGvCaZimuK-0WCfHZYkW8c9EAopjhwKe5-kZqbgHbW33Dwkzuo0dl9RYc0rQFf7SCBELvdv-QwMaxS4y-i-U53Lv9d5HwCyYn8ERw-JJfOdoDd2DonJRTLae9B3tyM0Lg0Kg3rZSgA~WAFveVxWbM86VjC2-aEkZ6OuJ0HfecwAdq2zN~dqY-LpqNODa122-0y6uY3HIh~y69ime4D~zJzKR0n3uwEeGx3XA__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "red_rock": {
+    "prompt": "A chunk of layered purple-red Jurassic sandstone with clear horizontal strata bands in brick red, rust and pale tan, rough broken edges and a flat top. Geology sample. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 6000,
+    "task_id": "4e20616e-3fd7-483c-8a67-f2f7c9c9358b",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/4e20616e-3fd7-483c-8a67-f2f7c9c9358b/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvNGUyMDYxNmUtM2ZkNy00ODNjLThhNjctZjJmN2M5YzkzNThiL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTEyMDc3NDB9fX1dfQ__&Signature=K8RdmN8VfgTi~e6-gyO8g1mTPfO6NipFVAqguqoqiDnMHvaXNs~tlv9PWLanKgL-RbIkfMq8xErdw6kfpj7-fj6VagiGK~nJkHSI1Gv2DYujntTQqUM4RvkBTocDZxgJm~aPv-M1vVYAmLAvMhn2eaz~ipPFfmkTX9eTj3bELaEB9W2BOhKboNPMLn3tXLK6pndcS1jKOH1pJPrnx5pfC3-TS8VraWMQnywjazVKv-Ojrz9kuz~oqPCTSRTD7GT-gPyWTLlW~Y9aUWUJFG-UbvT7xU8nPinYTQk3PMuEuDjTJM1QMQtZFgjEQ036OLpra9dH2lHILuK3KW7YGX6ubA__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "feather_fossil": {
+    "prompt": "A flat rounded slab of pale grey shale with an embossed impression of a small feathered dinosaur skeleton, long tail and faint feather traces around the arms. Jehol biota fossil plate. stylized handmade clay diorama style, soft matte plasticine material, slightly chunky proportions, natural earthy colors, single isolated object, clean silhouette, no base, no pedestal",
+    "model": "v3.1-20260211",
+    "face_limit": 8000,
+    "task_id": "fe9f2ef2-aef0-4379-89e6-3c44fce10b10",
+    "credits": 20.0,
+    "preview": "https://tripo-data.rg1.data.tripo3d.com/tcli_a56dfa4c2f1a4b0b86b6838cbb20bb22/20261004/fe9f2ef2-aef0-4379-89e6-3c44fce10b10/legacy_mesh.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTU2ZGZhNGMyZjFhNGIwYjg2YjY4MzhjYmIyMGJiMjIvMjAyNjEwMDQvZmU5ZjJlZjItYWVmMC00Mzc5LTg5ZTYtM2M0NGZjZTEwYjEwL2xlZ2FjeV9tZXNoLndlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTEyMDc3MzN9fX1dfQ__&Signature=Do73BOsEafg3u9aZvC6hNyiYAM2ha6C9kDmjvqf08kNKFIc1y0szSlYVigBFurzGdN8POxP8oleE2iBVwYLZClCizHln5MNUwYTG7UyDj8U1OMLn-go~OuMCSw5yzeauDepBAaSoYT-nVD5L7q4xm1bbdXHvGTWYF-~GhFXKaUOens-9rCR5QpOZyWCn2l1Dv0CheuF7dNfYl2xLi9mjSCkSXIz-QCJ-IuW0Tc6JhQCV~vA~yDKAptPIyh6W9P~Xy2TdNT2TAWHlarpkGUbFdBfJWOypjxWKLR~4mHtZe4Col64vBtI9mecOxflYH4TklmgBtppYKQ7r-iWn49BPzw__&Key-Pair-Id=K1676C64NMVM2J"
+  }
+}

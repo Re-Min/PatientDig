@@ -1,0 +1,16 @@
+node_modules/
+tests/out/
+tools/__pycache__/
+tools/*.log
+
+# Local secrets and machine-specific files
+.env
+.env.*
+*.pem
+*.key
+*.secret
+
+# OS/editor metadata
+Thumbs.db
+.DS_Store
+.vscode/

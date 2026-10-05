@@ -1,0 +1,19 @@
+{
+  "name": "datday-prototype",
+  "private": true,
+  "version": "0.2.0",
+  "description": "地层之下 · 3D 发掘现场原型",
+  "scripts": {
+    "build": "npm run build:field && npm run build:home",
+    "build:field": "esbuild src/3d/main.js --bundle --format=iife --target=es2020 --loader:.glb=binary --minify --outfile=dist/dig3d.js",
+    "build:home": "esbuild src/home/main.js --bundle --format=iife --target=es2020 --loader:.glb=binary --minify --outfile=dist/home.js",
+    "test:home": "node tests/home.mjs",
+    "watch": "esbuild src/3d/main.js --bundle --format=iife --target=es2020 --loader:.glb=binary --sourcemap --outfile=dist/dig3d.js --watch",
+    "test": "node tests/smoke.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "puppeteer-core": "25.12.0",
+    "three": "0.180.0"
+  }
+}

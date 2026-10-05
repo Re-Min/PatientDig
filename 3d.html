@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+<title>地层之下 · 3D 发掘现场</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Nunito:wght@600;700;800;900&display=swap');
+/* tokens shared with index.html */
+:root{--ink:#29352f;--muted:#7e8980;--cream:#f5f0e3;--paper:#fffdf6;--line:#e6dfcf;--moss:#697b59;--moss-dark:#465842;--clay:#bc7350;--sun:#e7bd68;--soil:#9b6548;--shadow:0 14px 35px #453c2820;--round:22px;--inner:14px;--gap:20px}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#e8e6d9;color:var(--ink);font-family:Nunito,'Microsoft YaHei',sans-serif;font-size:13px}
+#scene{position:fixed;inset:0}canvas{display:block}
+button{font-family:inherit}
+.ui{position:fixed;inset:0;pointer-events:none}
+.ui button{pointer-events:auto}
+.language-toggle{position:absolute;right:var(--gap);bottom:var(--gap);z-index:4;border:1px solid var(--line);border-radius:var(--inner);padding:10px 14px;background:var(--paper);color:var(--moss-dark);font-size:12px;font-weight:900;cursor:pointer;box-shadow:var(--shadow)}
+.language-toggle:hover{background:var(--cream)}
+
+/* four-page tool tutorial triggered by the first excavation action */
+.dig-tutorial{position:fixed;inset:0;z-index:25;display:grid;place-items:center;padding:clamp(16px,3vw,40px);background:#101611cc;color:var(--paper);backdrop-filter:brightness(.45) saturate(.72)}
+.dig-tutorial[hidden]{display:none}
+.tutorial-stage{position:relative;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(10px,2vh,24px);overflow:hidden}
+.tutorial-image{display:block;width:min(900px,calc(100% - 120px));height:min(66vh,570px);object-fit:contain;object-position:center;filter:drop-shadow(0 16px 16px #171e1760)}
+.tutorial-copy{width:min(760px,calc(100% - 150px));text-align:center;padding:0 10px;text-shadow:0 2px 8px #101611}
+.tutorial-copy p{margin:0}
+.tutorial-en{font-size:clamp(15px,1.5vw,20px);font-weight:900;line-height:1.45;color:#fffdf0}
+.tutorial-zh{margin-top:5px!important;font-size:clamp(12px,1.2vw,16px);line-height:1.55;color:#e7d7b7}
+.tutorial-page{position:absolute;left:28px;bottom:24px;color:#e7d7b7;font:500 11px 'DM Mono',monospace;letter-spacing:.12em}
+.tutorial-next{position:absolute;right:24px;bottom:18px;display:grid;place-items:center;width:52px;height:52px;border:0;background:transparent;color:#fffdf0;cursor:pointer;filter:drop-shadow(0 2px 5px #101611)}
+.tutorial-next:hover{color:#e7bd68;transform:translateX(3px)}
+.tutorial-next:disabled{opacity:.45;cursor:wait}
+.tutorial-next svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tutorial-status{position:absolute;left:50%;bottom:31px;transform:translateX(-50%);font-size:11px;color:#e7d7b7}
+@media(max-width:650px){
+  .dig-tutorial{padding:10px}
+  .tutorial-stage{height:100%}
+  .tutorial-image{width:calc(100% - 28px);height:58vh}
+  .tutorial-copy{width:calc(100% - 38px)}
+  .tutorial-en{font-size:14px}
+  .tutorial-zh{font-size:12px}
+  .tutorial-page{left:16px;bottom:18px}
+  .tutorial-next{right:14px;bottom:11px;width:46px;height:46px}
+  .tutorial-status{bottom:25px;font-size:10px}
+}
+
+/* one panel style for every HUD surface */
+.panel{background:#fffdf6f0;border:1px solid #ded9c9;border-radius:var(--round);box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+.eyebrow{font:500 10px 'DM Mono',monospace;letter-spacing:.12em;color:#a09c8c;text-transform:uppercase}
+.sec+.sec{border-top:1px solid var(--line)}
+.sec{padding:16px 18px}
+.sec h4{margin:0 0 10px;display:flex;justify-content:space-between;align-items:baseline;font-size:13px;font-weight:900}
+.sec h4 .eyebrow{font-weight:400}
+
+.side{position:absolute;top:var(--gap);width:256px;max-height:calc(100% - 128px);display:flex;flex-direction:column;overflow:hidden}
+.side.l{left:var(--gap)}.side.r{right:var(--gap)}
+
+/* left: brand + brief + live stats */
+.brand{display:flex;align-items:center;gap:11px}
+.brand .mark{width:36px;height:36px;flex:none;border-radius:12px;background:var(--moss);display:grid;place-items:center;box-shadow:0 3px 0 #46543e}
+.brand .mark svg{width:20px;height:20px}
+.brand b{display:block;font-size:16px;font-weight:900;letter-spacing:-.01em}
+.brand .eyebrow{display:block;margin-top:2px}
+.back{margin-left:auto;align-self:flex-start;border:1px solid var(--line);background:var(--cream);color:var(--moss-dark);border-radius:10px;padding:5px 9px;font-size:12px;font-weight:800;cursor:pointer}
+.back:hover{background:#e7ebdf}
+.brief h2{margin:6px 0 6px;font-size:17px;font-weight:900;line-height:1.3}
+.brief p{margin:0;font-size:12.5px;line-height:1.75;color:var(--muted)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stat{background:var(--cream);border-radius:var(--inner);padding:9px 11px}
+.stat.wide{grid-column:1/-1}
+.stat span{display:block;font-size:11px;color:var(--muted)}
+.stat b{display:block;margin-top:2px;font-size:14px;font-weight:900;color:var(--moss-dark);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* right: site + controls + record log */
+.site b{display:block;margin-top:4px;font-size:15px;font-weight:900}
+.site small{display:block;margin-top:2px;font-size:12px;color:var(--muted)}
+.keys{margin:0;padding:0;list-style:none;display:grid;gap:7px;font-size:12.5px;color:#56604f}
+.keys li{display:flex;align-items:center;gap:8px}
+.keys kbd{flex:none;min-width:44px;text-align:center;font:500 10px 'DM Mono',monospace;color:var(--moss-dark);background:#e8ebdf;border-radius:7px;padding:3px 6px}
+.logsec{flex:1;min-height:0;display:flex;flex-direction:column}
+.log{overflow:auto;display:grid;gap:7px;min-height:0}
+.log:empty::before{content:attr(data-empty-text);display:block;padding:12px;border:1px dashed #d8d1bf;border-radius:var(--inner);font-size:12px;color:#a09c8c;text-align:center}
+.log div{background:var(--cream);border-radius:var(--inner);padding:9px 11px;font-size:12px;line-height:1.6;color:var(--muted)}
+.log b{display:block;font-size:13px;font-weight:900;color:var(--moss-dark)}
+
+/* bottom toolbar */
+.tools{position:absolute;left:50%;bottom:var(--gap);transform:translateX(-50%);display:flex;align-items:center;gap:6px;padding:8px;border-radius:var(--round)}
+.tools button{display:flex;align-items:center;gap:7px;border:0;background:transparent;border-radius:var(--inner);padding:10px 14px;color:var(--muted);font-size:13px;font-weight:800;cursor:pointer;transition:background .15s,color .15s}
+.tools button:hover{background:var(--cream)}
+.tools button svg{width:18px;height:18px;flex:none}
+.tools button.on{background:#e7ebdf;color:var(--moss-dark);box-shadow:inset 0 -2px 0 #d6dfcd}
+.tools kbd{font:500 10px 'DM Mono',monospace;color:#a09c8c;background:#f2eee2;border-radius:6px;padding:1px 5px}
+.tools button.on kbd{background:#d6dfcd;color:var(--moss-dark)}
+.tools .sep{width:1px;align-self:stretch;margin:6px 4px;background:var(--line)}
+.tools .dig{background:var(--moss);color:#fffdf0;padding:11px 22px;box-shadow:0 4px 0 #46543e;margin-bottom:4px}
+.tools .dig:hover{background:#73865f}
+.tools .dig:active{transform:translateY(3px);box-shadow:0 1px 0 #46543e}
+
+/* notice: same as index.html's field notice */
+.notice{position:absolute;left:50%;top:var(--gap);max-width:520px;transform:translate(-50%,-10px);opacity:0;padding:11px 18px;border-radius:var(--inner);background:#fcf8e9f2;border:1px solid #e7d7af;color:#796943;font-size:13px;font-weight:800;box-shadow:var(--shadow);transition:.25s}
+.notice::before{content:'';display:inline-block;width:8px;height:8px;margin-right:9px;border-radius:50%;background:var(--sun);vertical-align:1px}
+.notice.show{opacity:1;transform:translate(-50%,0)}
+
+/* loading */
+.loading{position:fixed;inset:0;display:grid;place-items:center;background:#e8e6d9 radial-gradient(#d6d2c2 1px,transparent 1px) 0 0/18px 18px;z-index:20;transition:opacity .6s}
+.loading.hide{opacity:0;pointer-events:none}
+.loading .panel{width:300px;padding:22px 24px;text-align:center}
+.loading b{display:block;margin:6px 0 14px;font-size:17px;font-weight:900}
+.loading .bar{height:8px;border-radius:5px;background:var(--cream);overflow:hidden}
+.loading .bar i{display:block;height:100%;width:0;background:var(--moss);border-radius:5px;transition:width .2s}
+.loading span{display:block;margin-top:10px;font-size:12px;color:var(--muted)}
+
+/* catalog card */
+.reveal{position:fixed;inset:0;display:grid;place-items:center;background:#29352f40;opacity:0;pointer-events:none;transition:opacity .5s;z-index:15}
+.reveal.show{opacity:1;pointer-events:auto}
+.reveal article{width:380px;padding:24px 26px;transform:translateY(14px);transition:transform .5s}
+.reveal.show article{transform:none}
+.reveal h3{margin:8px 0 2px;font-size:24px;font-weight:900}
+.reveal .latin{font:italic 12px 'DM Mono',monospace;color:var(--muted)}
+.reveal p{font-size:13px;line-height:1.8;color:var(--muted)}
+.reveal .tags span{display:inline-block;font-size:12px;font-weight:700;background:#e8ebdf;color:var(--moss-dark);border-radius:9px;padding:4px 10px;margin:0 5px 5px 0}
+.reveal .row{display:flex;gap:10px;margin-top:16px}
+.reveal button{flex:1;border:1px solid var(--line);border-radius:var(--inner);padding:12px;font-size:14px;font-weight:800;cursor:pointer;background:var(--cream);color:var(--moss-dark)}
+.reveal button.main{border-color:transparent;background:var(--moss);color:#fffdf0;box-shadow:0 4px 0 #46543e}
+.reveal button.main:active{transform:translateY(3px);box-shadow:0 1px 0 #46543e}
+.reveal small{display:block;margin-top:14px;font-size:11px;color:#a09c8c}
+</style>
+</head>
+<body data-music-volume="0.11">
+<section class="dig-tutorial" id="dig-tutorial" aria-label="Excavation tutorial" hidden aria-hidden="true">
+ <div class="tutorial-stage">
+  <img class="tutorial-image" id="tutorial-image" src="assets/tutorial/1.webp" alt="Excavation tutorial illustration 1">
+  <div class="tutorial-copy"><p class="tutorial-en" id="tutorial-en">Shovel: Dig large areas. Don't use on fragile fossils.</p><p class="tutorial-zh" id="tutorial-zh">铲子：大面积挖土。不要用于脆弱的化石。</p></div>
+  <span class="tutorial-page" id="tutorial-page" aria-live="polite">01 / 04</span>
+  <span class="tutorial-status" id="tutorial-status" role="status"></span>
+  <button class="tutorial-next" id="tutorial-next" type="button" aria-label="Next tutorial page" title="Next tutorial page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></button>
+ </div>
+</section>
+<div id="scene"></div>
+<div class="loading" id="loading"><div class="panel"><div class="eyebrow" data-i18n="loadingEyebrow">FIELD DIG / LOADING</div><b data-i18n="loadingTitle">布置发掘现场…</b><div class="bar"><i id="load-bar"></i></div><span id="load-text" data-i18n="loadingText">载入 Tripo 模型</span></div></div>
+<div class="ui">
+ <aside class="panel side l">
+  <div class="sec brand">
+   <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fffdf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M3 14h18M3 19h18"/><path d="M8 4c2 0 3 1 4 2s2 1 4 1"/></svg></div>
+   <div><b data-i18n="brand">PatientDig</b><span class="eyebrow">3D Field Dig</span></div>
+   <button class="back" onclick="location.href='index.html'" data-i18n="back">← 地图</button>
+  </div>
+  <div class="sec brief">
+   <div class="eyebrow" data-i18n="briefEyebrow">Field Brief / 1985</div>
+   <h2 data-i18n="briefTitle">尾椎露头，需要确认</h2>
+   <p data-i18n="briefBody">村民修房时发现疑似尾椎。先用小铲清理表土，露骨后换毛刷，边缘围岩用竹签剔除。</p>
+  </div>
+  <div class="sec stats">
+   <div class="stat wide"><span data-i18n="layerLabel">当前层位</span><b id="layer">松散坡积物</b></div>
+   <div class="stat"><span data-i18n="depthLabel">发掘深度</span><b id="depth">0.00 m</b></div>
+   <div class="stat"><span data-i18n="recordLabel">现场记录</span><b id="record">0 / 4</b></div>
+   <div class="stat"><span data-i18n="cellsLabel">挖掘方格</span><b id="cells">0 / 12</b></div>
+   <div class="stat"><span data-i18n="fossilLabel">化石线索</span><b id="fossil">未发现</b></div>
+  </div>
+ </aside>
+ <aside class="panel side r">
+  <div class="sec site"><div class="eyebrow" data-i18n="siteEyebrow">Site</div><b data-i18n="siteName">石头冲 · 和平街道</b><small data-i18n="siteLayer">自贡 · 晚侏罗世红层</small></div>
+  <div class="sec">
+   <h4><span data-i18n="controlsTitle">操作</span> <span class="eyebrow">Controls</span></h4>
+   <ul class="keys">
+    <li><kbd data-i18n="leftMouseKey">左键</kbd><span data-i18n="leftMouse">在坑内按住使用工具</span></li>
+    <li><kbd data-i18n="rightMouseKey">右键</kbd><span data-i18n="rightMouse">拖动旋转镜头</span></li>
+    <li><kbd data-i18n="wheelKey">滚轮</kbd><span data-i18n="wheel">缩放视角</span></li>
+    <li><kbd>1 2 3</kbd><span data-i18n="keys">切换小铲 / 毛刷 / 竹签</span></li>
+   </ul>
+  </div>
+  <div class="sec logsec">
+   <h4><span data-i18n="logTitle">现场记录</span> <span class="eyebrow">Log</span></h4>
+   <div class="log" id="log" data-empty-text="骨骼剥离后点击，即可编号记录"></div>
+  </div>
+ </aside>
+ <div class="notice" id="notice" data-i18n="noticePick">选定一个土层格</div>
+ <div class="panel tools">
+  <button class="on" data-tool="shovel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5 20.5 9.5 13 13 11 11z"/><path d="M11.5 12.5 5 19"/></svg><span data-i18n="toolShovel">小铲</span><kbd>1</kbd></button>
+  <button data-tool="brush"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l7.5-7.5"/><path d="M10.5 10.5l3 3"/><path d="M12 9l4-4c1.5-1.5 4 1 2.5 2.5L15 12z"/></svg><span data-i18n="toolBrush">毛刷</span><kbd>2</kbd></button>
+  <button data-tool="pick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 18 6"/><path d="M18 6l2.5-2.5"/><path d="M7.5 14.5l2 2"/></svg><span data-i18n="toolPick">竹签</span><kbd>3</kbd></button>
+  <span class="sep"></span>
+  <button class="dig" id="dig">铲一次</button>
+ </div>
+ <button class="language-toggle" id="language-toggle" type="button" aria-label="切换语言 · English" title="切换语言 · English">English</button>
+</div>
+<div class="reveal" id="reveal"><article class="panel">
+ <div class="eyebrow" data-i18n="revealEyebrow">新图鉴卡片 / 01</div>
+ <h3 data-i18n="revealTitle">和平永川龙</h3><div class="latin" data-i18n="revealLatin">Yangchuanosaurus hepingensis</div>
+ <p data-i18n="revealBody">晚侏罗世 · 四川自贡和平街道石头冲。1985 年当地村民修房时发现尾椎，后经采集与修理获得较完整的肉食恐龙骨架。现场记录：尾椎、椎体、肋骨片段、零散骨片。</p>
+ <div class="tags"><span data-i18n="tagTheropod">兽脚类</span><span data-i18n="tagJurassic">晚侏罗世</span><span data-i18n="tagRedBeds">自贡红层</span><span data-i18n="tagRecorded">已编号 4 件</span></div>
+ <div class="row"><button id="reveal-stay" data-i18n="stay">留在现场</button><button class="main" id="reveal-go" data-i18n="viewCatalog">查看图鉴</button></div>
+ <small data-i18n="revealNote">骨骼布局为演示改编，物种与发现故事依据自贡恐龙博物馆公开资料。</small>
+</article></div>
+<script src="src/home/music.js"></script>
+<script src="src/3d/tutorial.js"></script>
+<script src="dist/dig3d.js"></script>
+</body></html>
